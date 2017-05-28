@@ -24,15 +24,15 @@ gulp.task('hello', function() {
 gulp.task('browserSync', function() {
   browserSync({
     server: {
-      baseDir: 'app'
+      baseDir: 'docs'
     }
   })
 })
 
 gulp.task('sass', function() {
-  return gulp.src('app/scss/main.scss') // Gets all files ending with .scss in app/scss and children dirs
+  return gulp.src('docs/scss/main.scss') // Gets all files ending with .scss in docs/scss and children dirs
     .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
-    .pipe(gulp.dest('app/css')) // Outputs it in the css folder
+    .pipe(gulp.dest('docs/css')) // Outputs it in the css folder
     .pipe(browserSync.reload({ // Reloading with Browser Sync
       stream: true
     }));
@@ -40,9 +40,9 @@ gulp.task('sass', function() {
 
 // Watchers
 gulp.task('watch', function() {
-  gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('docs/scss/**/*.scss', ['sass']);
+  gulp.watch('docs/*.html', browserSync.reload);
+  gulp.watch('docs/js/**/*.js', browserSync.reload);
 })
 
 // Optimization Tasks 
@@ -51,7 +51,7 @@ gulp.task('watch', function() {
 // Optimizing CSS and JavaScript 
 gulp.task('useref', function() {
 
-  return gulp.src('app/*.html')
+  return gulp.src('docs/*.html')
     .pipe(useref())
     .pipe(gulpIf('*.js', uglify()))
     .pipe(gulpIf('*.css', cssnano()))
@@ -60,7 +60,7 @@ gulp.task('useref', function() {
 
 // Optimizing Images 
 gulp.task('images', function() {
-  return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
+  return gulp.src('docs/images/**/*.+(png|jpg|jpeg|gif|svg)')
     // Caching images that ran through imagemin
     .pipe(cache(imagemin({
       interlaced: true,
@@ -70,7 +70,7 @@ gulp.task('images', function() {
 
 // Copying fonts 
 gulp.task('fonts', function() {
-  return gulp.src('app/fonts/**/*')
+  return gulp.src('docs/fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
 })
 
