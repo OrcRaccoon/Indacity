@@ -1,5 +1,2 @@
-# Gulp Starter for CSS Tricks Tutorial  
-
-This repo is a gulp starter for this CSS Tricks tutorial. 
-
-Remember to do run the `npm install` command after cloning this repo :) 
+Project for "Марафон верстки. Сайт Аудиоквесты в Казани";
+All lessons https://www.youtube.com/playlist?list=PL3LQJkGQtzc7iPpB5E9yLUPku4H-cGzvX;
