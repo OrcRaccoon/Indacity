@@ -4,8 +4,21 @@ html {
 }
 body {
 	color: $main-black;
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	@include reg;
+}
+section {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+h {
+	font-size: 1.4rem;
+}
+.section-header {
+	font-size: 2rem;
+	@include bold;
+}
+*{
+transition: all 0.2s;
 }
 
 a:visited,
@@ -123,4 +136,23 @@ h1 {
 	span {
 		display: block;
 	}
+}
+
+
+// About
+.about {
+  &-text {
+    text-align: center;
+  }
+  &-features {
+    text-align: center;
+    img {
+      width: 40%;
+      min-width: 10rem;
+      margin-top: 5rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+  }
 }

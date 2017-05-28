@@ -3,10 +3,11 @@
 $main-black: rgb(26, 26, 26);
 $white: rgb(255, 255, 255);
 $btn: rgb(0, 163, 212);
+$bg-light: #f3f3f3;
 
 // Variables
 @mixin reg {
-font-family: sans-serif;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @mixin bold {
 font-family: 'Museo Sans Cyrl 700';

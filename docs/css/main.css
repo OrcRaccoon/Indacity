@@ -17,8 +17,21 @@ html {
 
 body {
   color: #1a1a1a;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-family: sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+h {
+  font-size: 1.4rem; }
+
+.section-header {
+  font-size: 2rem;
+  font-family: 'Museo Sans Cyrl 700'; }
+
+* {
+  transition: all 0.2s; }
 
 a:visited,
 a:hover,
@@ -106,3 +119,15 @@ h1 {
   text-transform: uppercase; }
   h1 span {
     display: block; }
+
+.about-text {
+  text-align: center; }
+
+.about-features {
+  text-align: center; }
+  .about-features img {
+    width: 40%;
+    min-width: 10rem;
+    margin-top: 5rem; }
+  .about-features p {
+    font-size: 1.8rem; }
