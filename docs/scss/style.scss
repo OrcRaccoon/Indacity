@@ -5,17 +5,47 @@ html {
 body {
 	color: $main-black;
 	@include reg;
+	overflow-x: hidden;
 }
 section {
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 }
-h {
+p {
 	font-size: 1.4rem;
+	
 }
+iframe {
+	border: none;
+}
+button:focus {
+	outline: none;
+}
+.btn {
+  	display: block;
+  	width: 30rem;
+  	background-color: $btn;
+  	color: $white;
+  	padding: 2rem;
+  	margin: 2rem auto;
+  	border-radius: 5px;
+  	font-size: 1.8rem;
+  	text-align: center;
+  	&:hover {
+  		background-color: darken($btn, 10%);
+  		color: $white;
+  	}
+  	&:focus {
+  		color: $white;
+  	}
+  }
+
+
 .section-header {
 	font-size: 2rem;
 	@include bold;
+	margin: 0;
+	margin-bottom: 1.4rem;
 }
 *{
 transition: all 0.2s;
@@ -27,6 +57,7 @@ a:active,
 a:focus {
 text-decoration: none;
 }
+
 // Header
 .header {
   height: 100vh;
@@ -51,23 +82,6 @@ text-decoration: none;
     span {
     	display: block;
     }
-  }
-  &-btn {
-  	display: block;
-  	width: 30rem;
-  	background-color: $btn;
-  	color: $white;
-  	padding: 2rem;
-  	margin: 2rem auto;
-  	border-radius: 5px;
-  	font-size: 1.8rem;
-  	&:hover {
-  		background-color: darken($btn, 10%);
-  		color: $white;
-  	}
-  	&:focus {
-  		color: $white;
-  	}
   }
 }
 .nav {
@@ -155,4 +169,59 @@ h1 {
       font-size: 1.8rem;
     }
   }
+  &-slider {
+  	text-align: center;
+  	img {
+  		width: 100%;
+  		max-width: 40rem;
+  	}
+  }
+}
+
+// Video
+section#video {
+	background-color: $bg-light;
+}
+.video {
+  &-text {
+    text-align: center;
+    h2 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      opacity: .75;
+      display: block;
+    }
+  }
+  &-iframe {
+  	margin: 0 auto;
+  	width: 95%;
+  	min-width: 30rem;
+  	display: block;
+  	height: 30rem;
+  }
+}
+.arrow {
+	background: $white;
+	border: none;
+	border-radius: 4px;
+	width: 3rem;
+	height: 3rem;
+	position: absolute;
+	bottom: 1rem;
+	left: 1rem;
+	z-index: 5;
+	&-left {
+
+	}
+	&-right {
+		transform: translatex(4rem);
+		img {
+			transform: rotate(180deg);
+		}
+	}
+	img {
+		width: .5rem;
+	}
 }

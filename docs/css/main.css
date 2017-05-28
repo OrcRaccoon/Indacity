@@ -17,18 +17,43 @@ html {
 
 body {
   color: #1a1a1a;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden; }
 
 section {
   padding-top: 5rem;
   padding-bottom: 5rem; }
 
-h {
+p {
   font-size: 1.4rem; }
+
+iframe {
+  border: none; }
+
+button:focus {
+  outline: none; }
+
+.btn {
+  display: block;
+  width: 30rem;
+  background-color: #00a3d4;
+  color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  text-align: center; }
+  .btn:hover {
+    background-color: #007ca1;
+    color: white; }
+  .btn:focus {
+    color: white; }
 
 .section-header {
   font-size: 2rem;
-  font-family: 'Museo Sans Cyrl 700'; }
+  font-family: 'Museo Sans Cyrl 700';
+  margin: 0;
+  margin-bottom: 1.4rem; }
 
 * {
   transition: all 0.2s; }
@@ -56,20 +81,6 @@ a:focus {
       font-size: 1.6rem; }
     .header-text span {
       display: block; }
-  .header-btn {
-    display: block;
-    width: 30rem;
-    background-color: #00a3d4;
-    color: white;
-    padding: 2rem;
-    margin: 2rem auto;
-    border-radius: 5px;
-    font-size: 1.8rem; }
-    .header-btn:hover {
-      background-color: #007ca1;
-      color: white; }
-    .header-btn:focus {
-      color: white; }
 
 .nav-link {
   position: relative;
@@ -131,3 +142,45 @@ h1 {
     margin-top: 5rem; }
   .about-features p {
     font-size: 1.8rem; }
+
+.about-slider {
+  text-align: center; }
+  .about-slider img {
+    width: 100%;
+    max-width: 40rem; }
+
+section#video {
+  background-color: #f3f3f3; }
+
+.video-text {
+  text-align: center; }
+  .video-text h2 {
+    margin: 0; }
+  .video-text p {
+    margin: 0;
+    opacity: .75;
+    display: block; }
+
+.video-iframe {
+  margin: 0 auto;
+  width: 95%;
+  min-width: 30rem;
+  display: block;
+  height: 30rem; }
+
+.arrow {
+  background: white;
+  border: none;
+  border-radius: 4px;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 5; }
+  .arrow-right {
+    transform: translatex(4rem); }
+    .arrow-right img {
+      transform: rotate(180deg); }
+  .arrow img {
+    width: .5rem; }

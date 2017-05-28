@@ -37,7 +37,7 @@
 				</div>
 				<h1>Первый в Казани <span>групповой аудиоквест</span></h1>
 				<p>Попробуй услышать, представить<span> и узнать этот город с новой стороны</span></p>
-				<a href="#about" class="header-btn">Узнать подробнее</a>
+				<a href="#about" class="btn">Узнать подробнее</a>
 			</div>
 		</div>
 	</header>
@@ -54,50 +54,87 @@
 		<div class="about-features">
 			<div class="row">
 				<div class="col-xs-12 col-md-3">
-					<p>Специальные наушники</p>
+					
 					<picture>
 						<source srcset="images/1.svg">
 						<img src="images/1.png" alt="Специальные наушники" title="Специальные наушники">
 					</picture>
+					<p>Специальные наушники</p>
 				</div>
 				<div class="col-xs-12 col-md-3">
-					<p>Группы из 10-40 человек</p>
+					
 					<picture>
 						<source srcset="images/2.svg">
 						<img src="images/2.png" alt="Группы из 10-40 человек" title="Группы из 10-40 человек">
 					</picture>
+					<p>Группы из 10-40 человек</p>
 				</div>
 				<div class="col-xs-12 col-md-3">
-					<p>Прямо на улицах города</p>
+					
 					<picture>
 						<source srcset="images/3.svg">
 						<img src="images/3.png" alt="Прямо на улицах города" title="Прямо на улицах города">
 					</picture>
+					<p>Прямо на улицах города</p>
 				</div>
 				<div class="col-xs-12 col-md-3">
-					<p>Длительность квеста 90 минут</p>
+					
 					<picture>
 						<source srcset="images/4.svg">
 						<img src="images/4.png" alt="Длительность квеста 90 минут" title="Длительность квеста 90 минут">
 					</picture>
+					<p>Длительность квеста 90 минут</p>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="col-xs-12">
+		<div class="about-slider">
+			<div class="slider-item"><img src="images/slider/1.jpg" alt="Фотография с квеста"></div>
+			<div class="slider-item"><img src="images/slider/2.jpg" alt="Фотография с квеста"></div>
+			<div class="slider-item"><img src="images/slider/3.jpg" alt="Фотография с квеста"></div>
+			<div class="slider-item"><img src="images/slider/4.jpg" alt="Фотография с квеста"></div>
+			<div class="slider-item"><img src="images/slider/5.jpg" alt="Фотография с квеста"></div>
+			<div class="slider-item"><img src="images/slider/6.jpg" alt="Фотография с квеста"></div>
+		</div>
+
+	</div>
+
 </div>
 			</div>
 		</section>
 
-		<section id="video">
+		<section id="video" class="video">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
-						<h2 class="section-header">Посмотрите видео</h2>
+						<div class="video-text">
+							<h2 class="section-header">Посмотрите видео</h2>
+							<p>чтобы увидеть всё своими глазами</p>
+							<a href="" class="btn">Принять участие в квесте</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<iframe class="video-iframe" src="https://www.youtube.com/embed/qrwlk7_GF9g" allowfullscreen></iframe>
 					</div>
 				</div>
 			</div>
 		</section>
+
+
 	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<script src="slick/slick.min.js"></script>
+	<script>
+		$(document).ready(function(){
+  $('.about-slider').slick({
+  	prevArrow: '<button class="arrow arrow-left"><picture><source srcset="images/arrow.svg"><img src="images/arrow.png" alt="arrow-left" title="arrow-left"></picture></button>',
+  nextArrow: '<button class="arrow arrow-right"><picture><source srcset="images/arrow.svg"><img src="images/arrow.png" alt="arrow-right" title="arrow-right"></picture></button>'
+});
+});
+	</script>
 </body>
 </html>
