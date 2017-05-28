@@ -1,0 +1,16 @@
+// Colors
+
+$main-black: rgb(26, 26, 26);
+$white: rgb(255, 255, 255);
+$btn: rgb(0, 163, 212);
+
+// Variables
+@mixin reg {
+font-family: sans-serif;
+}
+@mixin bold {
+font-family: 'Museo Sans Cyrl 700';
+}
+@mixin light {
+font-family: 'Museo Sans Cyrl 100';
+}
