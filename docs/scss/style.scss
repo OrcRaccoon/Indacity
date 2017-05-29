@@ -21,6 +21,16 @@ iframe {
 button:focus {
 	outline: none;
 }
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
 .btn {
   	display: block;
   	width: 30rem;
@@ -46,6 +56,7 @@ button:focus {
 	@include bold;
 	margin: 0;
 	margin-bottom: 1.4rem;
+	text-align: center;
 }
 *{
 transition: all 0.2s;
@@ -225,3 +236,6 @@ section#video {
 		width: .5rem;
 	}
 }
+ // List
+
+
