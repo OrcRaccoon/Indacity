@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Egde">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Аудиоквесты на улицах Казани</title>
     <link rel="stylesheet" href="css/normalize.css">
@@ -24,9 +24,20 @@
                     </div>
                 </div>
                 <div class="col-xs-3">
-                    <a href="" class="nav-link">
+                    <button href="" class="nav-link">
                         <span class="nav-line"></span>
-                    </a>
+                    </button>
+                    <div class="navigation-mobile">
+                    <button class="navigation-close">&times;</button>
+                    	<ul>
+                    		<li><a href="#about">Что это?</a></li>
+                    		<li><a href="#video">Видео</a></li>
+                    		<li><a href="#list">Список квестов</a></li>
+                    		<li><a href="#faq">FAQ</a></li>
+                    		<li><a href="#footer">Контакты</a></li>
+                    		<li><a href="#">Заказать билет</a></li>
+                    	</ul>
+                    </div>
                 </div>
             </div>
             <div class="header-text">
@@ -318,7 +329,7 @@
         </div>
     </section>
 </main>
-<footer class="footer">
+<footer id="footer" class="footer">
     <div class="container">
         <div class="row">
         	<div class="col-xs-12 col-md-6">
@@ -355,18 +366,24 @@
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <script src="slick/slick.min.js"></script>
-    <script>
-    $(document).ready(function() {
-        $('.about-slider').slick({
-            prevArrow: '<button class="arrow arrow-left"><picture><source srcset="images/arrow.svg"><img src="images/arrow.png" alt="arrow-left" title="arrow-left"></picture></button>',
-            nextArrow: '<button class="arrow arrow-right"><picture><source srcset="images/arrow.svg"><img src="images/arrow.png" alt="arrow-right" title="arrow-right"></picture></button>'
-        });
-        $('.faq-link').click(function() {
-            $(this).find('.arrow-down').toggleClass('arrow-down__active');
-        });
-
+<script>
+$(document).ready(function() {
+    $('.about-slider').slick({
+        prevArrow: '<button class="arrow arrow-left"><picture><source srcset="images/arrow.svg"><img src="images/arrow.png" alt="arrow-left" title="arrow-left"></picture></button>',
+        nextArrow: '<button class="arrow arrow-right"><picture><source srcset="images/arrow.svg"><img src="images/arrow.png" alt="arrow-right" title="arrow-right"></picture></button>'
     });
-    </script>
+    $('.faq-link').click(function() {
+        $(this).find('.arrow-down').toggleClass('arrow-down__active');
+    });
+    $('.nav-link').click(function() {
+        $('.navigation-mobile').toggleClass('navigation-mobile_active');
+    });
+    $('.navigation-close').click(function() {
+        $('.navigation-mobile').toggleClass('navigation-mobile_active');
+    });
+});
+</script>
+
 </body>
 
 </html>

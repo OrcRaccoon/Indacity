@@ -120,7 +120,8 @@ a:focus {
 .nav {
   &-link {
     position: relative;
-
+background-color: transparent;
+border: none;
     display: block;
 
     width: 30px;
@@ -142,7 +143,7 @@ a:focus {
     background-color: $white;
   }
   &-line:before {
-    position: absolute;
+    position: relative;
 
     display: block;
 
@@ -150,12 +151,12 @@ a:focus {
     height: 2px;
 
     content: "";
-    transform: translatey(-4px);
+    transform: translatey(-5px);
 
     background-color: $white;
   }
   &-line:after {
-    position: absolute;
+    position: relative;
 
     display: block;
 
@@ -163,11 +164,53 @@ a:focus {
     height: 2px;
 
     content: "";
-    transform: translatey(4px);
+    transform: translatey(3px);
 
     background-color: $white;
   }
 }
+.navigation-close {
+	background-color: transparent;
+	border: none;
+	font-size: 3rem;
+	@include light;
+
+	position: absolute;
+	top: 2.5rem;
+	right: 4rem;
+}
+.navigation-mobile {
+    transform: translatex(100%);
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: $btn;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul {
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        a {
+            display: block;
+            color: $white;
+            font-size: 2rem;
+            text-transform: uppercase;
+            @include light;
+            letter-spacing: 2px;
+        }
+    }
+}
+.navigation-mobile_active {
+		transform: translatex(0%);
+	}
+
 .main-logo {
   padding-top: 10rem;
   img {
