@@ -84,7 +84,9 @@ li {
 * {
   transition: all 0.2s;
 }
-
+	.visible-lg {
+		display: none;
+	}
 a:visited,
 a:hover,
 a:active,
@@ -180,6 +182,7 @@ border: none;
 	right: 4rem;
 }
 .navigation-mobile {
+	z-index: 99;
     transform: translatex(100%);
     position: fixed;
     right: 0;
@@ -250,7 +253,7 @@ h1 {
     text-align: center;
     img {
       width: 100%;
-      max-width: 40rem;
+      
     }
   }
 }
@@ -278,8 +281,9 @@ section#video {
 
     width: 95%;
     min-width: 30rem;
-    height: 30rem;
+    min-height: 30rem;
     margin: 0 auto;
+
   }
 }
 .arrow {

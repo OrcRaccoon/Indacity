@@ -1,0 +1,199 @@
+@media #{$mobile-l} {
+html {
+	font-size: 10px;
+}
+}
+
+@media #{$mobile-p} {
+html {
+	font-size: 12px;
+}
+}
+
+@media #{$tablet} {
+html {
+	font-size: 14px;
+}
+}
+
+@media #{$desktop} {
+html {
+	font-size: 14px;
+}
+.contacts {
+	font-size: 1.3rem;
+	text-align: left;
+	a {
+display: inline-block;
+font-size: 1.3rem;
+	}
+	p {
+		margin-top: 2rem;
+		font-size: 1.3rem;
+	}
+}
+}
+
+@media #{$desktop-full} {
+	html {
+		font-size: 11px;
+	}
+	.visible-lg {
+		display: block;
+	}
+	.header-text span {
+		display: inline-block;
+	}
+	.main-logo {
+		padding-top: 5rem;
+	}
+	.about {
+		h2 {
+			text-align: left;
+font-size: 3rem;
+
+		}
+  &-text {
+    text-align: left;
+    p {
+	font-size: 1.5rem;
+}
+  }
+  &-features {
+    text-align: center;
+    img {
+      width: 20%;
+      min-width: 5rem;
+      margin-top: 1rem;
+    }
+    p {
+      font-size: 1.8rem;
+    }
+  }
+  &-slider {
+    text-align: center;
+
+    img {
+
+      width: 100%;
+      
+    }
+  }
+}
+.arrow {
+  position: absolute;
+  z-index: 5;
+  bottom: 1rem;
+  left: 1rem;
+
+  width: 3rem;
+  height: 3rem;
+
+  border: none;
+  border-radius: 4px;
+  background: $white;
+  img {
+    width: 0.7rem;
+  }
+}
+.format {
+	&-text {
+		float: right;
+
+	}
+}
+.video-text {
+	margin: 4rem auto;
+	h2 {
+		text-align: left;
+		font-size: 3rem;
+	}
+	p {
+		text-align: left;
+		font-size: 1.8rem;
+	}
+	.btn {
+	float: left;
+	width: 90%;
+	height: 10rem;
+	margin: 5rem auto;
+	padding-top: 3rem;
+	font-size: 2.3rem;
+}
+}
+.contacts {
+	font-size: 1.7rem;
+	text-align: left;
+	a {
+display: inline-block;
+font-size: 1.7rem;
+	}
+	p {
+		margin-top: 2rem;
+		font-size: 1.6rem;
+	}
+}
+.footer {
+	padding-top: 2rem;
+}
+.hidden-lg {
+	display: none;
+}
+.navigation-lg {
+	text-align: right;
+	font-size: 1.5rem;
+	li {
+		display: inline-block;
+		margin-left: 1.8rem;
+a {
+	color: $white;
+	display: inline-block;
+	position: relative;
+	&.nav-item:after {
+		transition: all 0.2s;
+		
+		position: absolute;
+		bottom: -5px;
+		left: 50%;
+		content: "";
+		display: inline-block;
+		width: 0%;
+		height: 2px;
+		background: $btn;
+		
+	}
+&:hover {
+		&.nav-item:after {
+
+		position: absolute;
+		bottom: -5px;
+		left: 0;
+		content: "";
+		display: inline-block;
+		width: 100%;
+		height: 2px;
+		background: $btn;
+		
+	}
+	}
+}
+}
+}
+.offer-btn {
+	border: 1px solid $btn;
+	display: inline-block;
+	padding: 1rem;
+	color: $white;
+	border-radius:5px;
+	&:hover {
+		color: $white;
+		background-color: $btn;
+	}
+	img {
+		width: 1.4rem;
+		margin-right: .3rem;
+		vertical-align: top;
+	}
+}
+}
+

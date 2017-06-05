@@ -14,7 +14,7 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-xs-9">
+                <div class="col-xs-9 col-lg-3">
                     <div class="description">
                         <picture>
                             <source srcset="images/top_logo.svg">
@@ -23,19 +23,32 @@
                         <span>Аудиоквесты на улицах Казани</span>
                     </div>
                 </div>
-                <div class="col-xs-3">
-                    <button href="" class="nav-link">
+                <div class="col-xs-3 col-lg-9">
+                <ul class="navigation-lg visible-lg">
+                    		<li><a class="nav-item slowly" href="#about">Что это?</a></li>
+                    		<li><a class="nav-item slowly" href="#video">Видео</a></li>
+                    		<li><a class="nav-item slowly" href="#list">Список квестов</a></li>
+                    		<li><a class="nav-item slowly" href="#faq">FAQ</a></li>
+                    		<li><a class="nav-item slowly" href="#footer">Контакты</a></li>
+                    		<li><a class="offer-btn" href="#">
+                    		<picture>
+                    			<source srcset="images/ticket.svg">
+                    			<img src="images/ticket.png" alt="Описание" title="Описание">
+                    		</picture>
+                    		Заказать билет</a></li>
+                    	</ul>
+                    <button class="nav-link hidden-lg">
                         <span class="nav-line"></span>
                     </button>
                     <div class="navigation-mobile">
                     <button class="navigation-close">&times;</button>
                     	<ul>
-                    		<li><a href="#about">Что это?</a></li>
-                    		<li><a href="#video">Видео</a></li>
-                    		<li><a href="#list">Список квестов</a></li>
-                    		<li><a href="#faq">FAQ</a></li>
-                    		<li><a href="#footer">Контакты</a></li>
-                    		<li><a href="#">Заказать билет</a></li>
+                    		<li><a class="slowly" href="#about">Что это?</a></li>
+                    		<li><a class="slowly" href="#video">Видео</a></li>
+                    		<li><a class="slowly" href="#list">Список квестов</a></li>
+                    		<li><a class="slowly" href="#faq">FAQ</a></li>
+                    		<li><a class="slowly" href="#footer">Контакты</a></li>
+                    		<li><a class="slowly" href="#">Заказать билет</a></li>
                     	</ul>
                     </div>
                 </div>
@@ -49,7 +62,7 @@
                 </div>
                 <h1>Первый в Казани <span>групповой аудиоквест</span></h1>
                 <p>Попробуй услышать, представить<span> и узнать этот город с новой стороны</span></p>
-                <a href="#about" class="btn">Узнать подробнее</a>
+                <a href="#about" class="btn slowly">Узнать подробнее</a>
             </div>
         </div>
     </header>
@@ -57,7 +70,7 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-lg-7 format-text">
                     <div class="about-text">
                         <h2 class="section-header">Абсолютно новый формат</h2>
                         <p>Это театрализованное представление, которое разворачивается прямо на улицах города. Вы становитесь частью сюжета. Все что вам нужно для участия - это специальные наушники и еще что-то.</p>
@@ -96,14 +109,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-lg-5 format-img">
                     <div class="about-slider">
                         <div class="slider-item"><img src="images/slider/1.jpg" alt="Фотография с квеста"></div>
                         <div class="slider-item"><img src="images/slider/2.jpg" alt="Фотография с квеста"></div>
                         <div class="slider-item"><img src="images/slider/3.jpg" alt="Фотография с квеста"></div>
                         <div class="slider-item"><img src="images/slider/4.jpg" alt="Фотография с квеста"></div>
-                        <div class="slider-item"><img src="images/slider/5.jpg" alt="Фотография с квеста"></div>
-                        <div class="slider-item"><img src="images/slider/6.jpg" alt="Фотография с квеста"></div>
+                        <div class="slider-item"><img src="images/slider/1.jpg" alt="Фотография с квеста"></div>
+                        <div class="slider-item"><img src="images/slider/2.jpg" alt="Фотография с квеста"></div>
                     </div>
                 </div>
             </div>
@@ -112,14 +125,14 @@
     <section id="video" class="video">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-lg-6">
                     <div class="video-text">
                         <h2 class="section-header">Посмотрите видео</h2>
                         <p class="small-text">чтобы увидеть всё своими глазами</p>
                         <a href="" class="btn">Принять участие в квесте</a>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-6">
+                <div class="col-xs-12 col-lg-6">
                     <iframe class="video-iframe" src="https://www.youtube.com/embed/qrwlk7_GF9g" allowfullscreen></iframe>
                 </div>
             </div>
@@ -275,57 +288,61 @@
     </section>
     <section id="ticket" class="ticket">
         <div class="container">
-            <h2 class="section-header">Купить билет на квест онлайн</h2>
-            <p class="small-text">Сохраните номер вашего заказа. Билет распечатывать не нужно, достаточно сохранить его в телефонe</p>
-            <div class="ticket-body">
-                <div class="balls-left">
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                </div>
-                <div class="balls-right">
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                </div>
-                <div class="row">
-                    <div class="col-xs-5">
-                        <div class="price-text">
-                            <span>Стоимость билета</span>
-                            <span class="price-taq">990 р.</span>
-                        </div>
-                    </div>
-                    <div class="col-xs-7">
-                        <button class="btn price-btn">Купить билет</button>
-                    </div>
-                </div>
-                <p>Вы будете переведены на страницу оплаты.
-                    <br> Все платежи защищены</p>
-            </div>
+<div class="row">
+	<div class="col-xs-12 col-lg-8 col-lg-offset-2">
+		<h2 class="section-header">Купить билет на квест онлайн</h2>
+		<p class="small-text">Сохраните номер вашего заказа. Билет распечатывать не нужно, достаточно сохранить его в телефонe</p>
+		<div class="ticket-body">
+		    <div class="balls-left">
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		    </div>
+		    <div class="balls-right">
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		        <span class="ball"></span>
+		    </div>
+		    <div class="row">
+		        <div class="col-xs-5">
+		            <div class="price-text">
+		                <span>Стоимость билета</span>
+		                <span class="price-taq">990 р.</span>
+		            </div>
+		        </div>
+		        <div class="col-xs-7">
+		            <button class="btn price-btn">Купить билет</button>
+		        </div>
+		    </div>
+		    <p>Вы будете переведены на страницу оплаты.
+		        <br> Все платежи защищены</p>
+		</div>
+	</div>
+</div>
         </div>
     </section>
 </main>
@@ -333,24 +350,25 @@
     <div class="container">
         <div class="row">
         	<div class="col-xs-12 col-md-6">
-        		<script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
-        		<!-- VK Widget -->
-        		<div id="vk_groups" class="vk_groups"></div>
-        		<script type="text/javascript">
-        		VK.Widgets.Group("vk_groups", {
-        		    mode: 3,
-        		    width: "300",
-        		    no_cover: 1,
-        		    color3: '00A3D4'
-        		}, 20003922);
-        		</script>
-        		<iframe class="instagram-iframe" src="//widget.instagramm.ru/?imageW=2&imageH=2&thumbnail_size=137&type=0&typetext=karri_lay&head_show=1&profile_show=1&shadow_show=0&bg=255,255,255,1&opacity=true&head_bg=00a3d4&subscribe_bg=00a3d4&border_color=c3c3c3&head_title=%25D0%259C%25D1%258B%2520%25D0%25B2%2520Instagram" allowtransparency="true" frameborder="0" scrolling="no"></iframe>
+
+        				<script type="text/javascript" src="//vk.com/js/api/openapi.js?146"></script>
+        				<!-- VK Widget -->
+        				<div id="vk_groups" class="vk_groups"></div>
+        				<script type="text/javascript">
+        				VK.Widgets.Group("vk_groups", {
+        				    mode: 3,
+        				    width: "300",
+        				    no_cover: 1,
+        				    color3: '00A3D4'
+        				}, 20003922);
+        				</script>
+
         	</div>
         	<div class="col-xs-12 col-md-6">
         		<div class="contacts">
         			<h2>Контакты</h2>
         			<p>8 (903) 319-21-01</p>
-        			<p>Почта для коммерческих предложений <a href="">mail.gmail.com</a></p>
+        			<p>Почта для коммерческих предложений <a href="mailto:info@indacity.org"> mail.gmail.com</a></p>
         		</div>
         	</div>
         </div>
@@ -367,21 +385,40 @@
     <link rel="stylesheet" href="slick/slick-theme.css">
     <script src="slick/slick.min.js"></script>
 <script>
-$(document).ready(function() {
-    $('.about-slider').slick({
-        prevArrow: '<button class="arrow arrow-left"><picture><source srcset="images/arrow.svg"><img src="images/arrow.png" alt="arrow-left" title="arrow-left"></picture></button>',
-        nextArrow: '<button class="arrow arrow-right"><picture><source srcset="images/arrow.svg"><img src="images/arrow.png" alt="arrow-right" title="arrow-right"></picture></button>'
-    });
-    $('.faq-link').click(function() {
-        $(this).find('.arrow-down').toggleClass('arrow-down__active');
-    });
-    $('.nav-link').click(function() {
-        $('.navigation-mobile').toggleClass('navigation-mobile_active');
-    });
-    $('.navigation-close').click(function() {
-        $('.navigation-mobile').toggleClass('navigation-mobile_active');
-    });
-});
+
+      $(document).ready(function(){
+        $('.about-slider').slick({
+          prevArrow: '<button class="arrow arrow-left"><picture><source srcset="img/arrow.svg"><img src="img/arrow.png" alt="arrow-left" title="arrow-left"></picture></button>',
+          nextArrow: '<button class="arrow arrow-right"><picture><source srcset="img/arrow.svg"><img src="img/arrow.png" alt="arrow-right" title="arrow-right"></picture></button>'
+        });
+        $('.faq-link').click(function(event) {
+        	event.preventDefault();
+          $(this).find('.arrow-down').toggleClass('arrow-down__active');
+        });
+        $('.nav-link').click(function(event) {
+        	event.preventDefault();
+          $('.navigation-mobile').toggleClass('navigation-mobile_active');
+        });
+        $('.navigation-close').click(function(event) {
+        	event.preventDefault();
+          $('.navigation-mobile').toggleClass('navigation-mobile_active');
+        });
+        $('.navigation-mobile a').click(function(event) {
+        	event.preventDefault();
+          $('.navigation-mobile').toggleClass('navigation-mobile_active');
+        });
+        $(".slowly").on("click", function (event) {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+            //забираем идентификатор бока с атрибута href
+            var id  = $(this).attr('href'),
+            //узнаем высоту от начала страницы до блока на который ссылается якорь
+              top = $(id).offset().top;
+            //анимируем переход на расстояние - top за 600 мс
+            $('body,html').animate({scrollTop: top}, 600);
+          });
+      });
+    
 </script>
 
 </body>

@@ -614,6 +614,9 @@ li {
 * {
   transition: all 0.2s; }
 
+.visible-lg {
+  display: none; }
+
 a:visited,
 a:hover,
 a:active,
@@ -686,6 +689,7 @@ a:focus {
   right: 4rem; }
 
 .navigation-mobile {
+  z-index: 99;
   transform: translatex(100%);
   position: fixed;
   right: 0;
@@ -742,8 +746,7 @@ h1 {
 .about-slider {
   text-align: center; }
   .about-slider img {
-    width: 100%;
-    max-width: 40rem; }
+    width: 100%; }
 
 section#video {
   background-color: #f3f3f3; }
@@ -761,7 +764,7 @@ section#video {
   display: block;
   width: 95%;
   min-width: 30rem;
-  height: 30rem;
+  min-height: 30rem;
   margin: 0 auto; }
 
 .arrow {
@@ -878,3 +881,141 @@ section#video {
   display: block;
   margin-top: 1.3rem;
   font-size: 2rem; }
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
+  html {
+    font-size: 10px; } }
+
+@media screen and (min-width: 480px) and (max-width: 767px) and (orientation: portrait) {
+  html {
+    font-size: 12px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 14px; } }
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 14px; }
+  .contacts {
+    font-size: 1.3rem;
+    text-align: left; }
+    .contacts a {
+      display: inline-block;
+      font-size: 1.3rem; }
+    .contacts p {
+      margin-top: 2rem;
+      font-size: 1.3rem; } }
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 11px; }
+  .visible-lg {
+    display: block; }
+  .header-text span {
+    display: inline-block; }
+  .main-logo {
+    padding-top: 5rem; }
+  .about h2 {
+    text-align: left;
+    font-size: 3rem; }
+  .about-text {
+    text-align: left; }
+    .about-text p {
+      font-size: 1.5rem; }
+  .about-features {
+    text-align: center; }
+    .about-features img {
+      width: 20%;
+      min-width: 5rem;
+      margin-top: 1rem; }
+    .about-features p {
+      font-size: 1.8rem; }
+  .about-slider {
+    text-align: center; }
+    .about-slider img {
+      width: 100%; }
+  .arrow {
+    position: absolute;
+    z-index: 5;
+    bottom: 1rem;
+    left: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 4px;
+    background: white; }
+    .arrow img {
+      width: 0.7rem; }
+  .format-text {
+    float: right; }
+  .video-text {
+    margin: 4rem auto; }
+    .video-text h2 {
+      text-align: left;
+      font-size: 3rem; }
+    .video-text p {
+      text-align: left;
+      font-size: 1.8rem; }
+    .video-text .btn {
+      float: left;
+      width: 90%;
+      height: 10rem;
+      margin: 5rem auto;
+      padding-top: 3rem;
+      font-size: 2.3rem; }
+  .contacts {
+    font-size: 1.7rem;
+    text-align: left; }
+    .contacts a {
+      display: inline-block;
+      font-size: 1.7rem; }
+    .contacts p {
+      margin-top: 2rem;
+      font-size: 1.6rem; }
+  .footer {
+    padding-top: 2rem; }
+  .hidden-lg {
+    display: none; }
+  .navigation-lg {
+    text-align: right;
+    font-size: 1.5rem; }
+    .navigation-lg li {
+      display: inline-block;
+      margin-left: 1.8rem; }
+      .navigation-lg li a {
+        color: white;
+        display: inline-block;
+        position: relative; }
+        .navigation-lg li a.nav-item:after {
+          transition: all 0.2s;
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          content: "";
+          display: inline-block;
+          width: 0%;
+          height: 2px;
+          background: #00a3d4; }
+        .navigation-lg li a:hover.nav-item:after {
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          content: "";
+          display: inline-block;
+          width: 100%;
+          height: 2px;
+          background: #00a3d4; }
+  .offer-btn {
+    border: 1px solid #00a3d4;
+    display: inline-block;
+    padding: 1rem;
+    color: white;
+    border-radius: 5px; }
+    .offer-btn:hover {
+      color: white;
+      background-color: #00a3d4; }
+    .offer-btn img {
+      width: 1.4rem;
+      margin-right: .3rem;
+      vertical-align: top; } }
